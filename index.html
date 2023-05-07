@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It.Artel-test</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Верстка та Загальне</h1>
+    <ol>
+        <li>Чи можна з js змінювати значення before, after?
+            <div>
+                <span class="correct-answer">Відповідь:</span>
+                <p>Безпосередньо звернутись до псевдо елементу як до ДОМ-елементу не можна, але 
+                    є варіант використання глобальних змінних для задання значень властивостей псевдоелементів, або
+                зміни контенту за допомогою дата атрибутів</p>
+            </div>
+        </li>
+        </br>
+        <li>Що вказує значення "1em" і якого параметра він прив'язаний
+                <div>
+                    <span class="correct-answer">Відповідь:</span>
+                    <p>Вказує, що заданий парметр буде залежати від розміру шрифту який використовується в батьківського елементу</p>
+                </div>
+        </li>
+        </br>
+        <li class="containers">3.Вмістити три блоки 20X20px в ряд, блок шириною 60px, при цьому у блоків повинні бути межі. Реалізуйте всі
+            варіанти, які знаєте.
+            <div style="display:flex;align-items: center; margin-bottom:10px;">
+                    <div class="flex-container">
+                        <div class="flex-item"></div>
+                        <div class="flex-item"></div>
+                        <div class="flex-item"></div>
+                    </div>
+                    <span>- Flex</span>
+            </div>
+                <div style="display:flex; align-items: center; margin-bottom:10px;">
+                    <div class="grid-container">
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                    </div>
+                    <span>- Grid</span>
+                </div>
+        </li>
+        <img height="300"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8wAAAKHCAMAAABjHjFHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJnUExURf////7+/v7//ujz6avTrqTTqKnYranZraXUqZ3MoZ3NoZ3MoJ7NoaLPpdDn0r/ewg+DGQB3BAd9EQd9EAZ9EAh+EgqAFAZ/EAB3Ane5fL3gwAmCEwBAAAAZAAAQAAAOAAAPAAAjAAAkAAAaAAARADZfOqvUr7LbtbbZuZDGlQd/EWixbsDjwxKIHAAiAAoACTowOUU8REE4QEI6QkQ7Qx8WHgAAABsSGkM6QjwzO1dOVuv06xyKJmewbcDiwwAbACkhKd7d3vb29vv7+3h3eGZmZv39/ejn6CUlJURERNvt3RqJIy4mLfHw8YKCgnBwcCoqKkJCQtvs3CsjK+bl5nt7e2pqavDw8CcnJ0NDQy4lLvbt9YSAhHJucf/5/yopKkhGSGawbb7hwQqEFCEfIK3LsMzwz8Tnx8ntzF1uX1BeUcbpycbpyMvvzrXWuB8kHzA5MLjbu7/jwrjau8ThxpzMoAmAEwuEFQMPBBB5GROQHRKLHBOOHQhBDQg5DBKMHBOPHRGAGwMVBQIhBQuBFQuGFgyBFQB1AHS3eur47KXUqDtMPAAnAAAwAAAtAAAuAAAvAAAXAAAcAAAdACUzJpbOm5DGlI/FlJXImcrkzG5rbgUGBSUmJS8rLisjKiojKhsaG3l3eWhnaBkZGcLCwvf29+fm5+fm5uXl5e/v711dXQUFBXFxcYeHh39/f4aGhiwsLBYWFuHh4VNTUx0dHQwMDNHR0VRUVBwcHOjo6G1tbQ0NDdLS0hsbG+Pj42trax4eHvLy8nNzcxQUFMvLy1xcXFlZWQoKCtPT06WlpXh4eOfn5wAAAGFSrFwAAADNdFJOU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////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" /></br>
+        </br>
+        <li>Є масив, де лежать об'єкти з датами, відсортуйте його за датами.
+            </br>
+            <pre style="border: 1px solid grey; padding: 10px" id="js-question"><code>
+        let array = [
+            {date: '2017-01-10'},
+            {date: '2016-05-18'},
+            {date: '2002-12-20'},
+            {date: '2020-06-30'}
+        ];
+            </code></pre>
+        </li>
+        </br>
+        <li>Напишіть код, який при натисканні на будь-який div всередині root буде виводити в консоль його id.</li>
+        </br>
+        <pre style="border: 1px solid grey; padding: 10px"><code>
+        &lt;div id="root" style="background: red;">
+            root
+            &lt;span id="id1" style="background: lightblue;">id1&lt;/span>
+            &lt;div id="id2" style="background: green;">
+                id2
+                &lt;div id="id3" style="background: yellow;">id3&lt;/div>
+                &lt;/div>
+        &lt;/div>
+        </code></pre>
+        <div id="root" style="background: red; width: 400px; height: 140px;">
+            root
+            <span id="id1" style="background: lightblue;">id1</span>
+            <div id="id2" style="background: green;height: 80px;">
+                id2
+                <div id="id3" style="background: yellow;">id3</div>
+            </div>
+        </div>
+    </ol>
+    
+    <h1>Angular</h1>
+    <ol>
+        <li>Яка різниця між *ngIf і [hidden]?</li>
+        </br>
+        <li>Що таке Observable?</li>
+        </br>
+        <li>
+            <p>Розглянемо наступний компонент:</p>
+            <pre style="border: 1px solid grey; padding: 10px"><code>
+        import { Component, Input } from '@angular/core';
+    
+        @Component({
+        selector: 'welcome',
+        template: `&lt;h1>Welcome to {{name}}!&lt;/h1>`,
+        styles: [`h1 { font-family: Lato; }`]
+        })
+        export class WelcomeComponent  {
+        @Input() name: string;
+        }
+            </code></pre>
+            <p>Виберіть правильні твердження про його використання (в іншому шаблоні компонента або модулі).</p>
+            <p>(Виберіть усі прийнятні відповіді.)</p>
+            <ol>
+                <li>&lt;welcome name="TestDome">&lt;/welcome> відображатиме: "Welcome to TestDome!".</li>
+                <li>&lt;welcome>&lt;/welcome> нічого не відображатиме.</li>
+                <li>@NgModule({ declarations: [ WelcomeComponent ] }) export class WelcomeModule {} повідомляє, що компонент
+                    привітання належить модулю привітання.</li>
+                <li>&lt;hello name="{{ name }}">&lt;/hello> відображатиме: "Welcome to name!".</li>
+            </ol>
+        </li>
+        <li>
+            <p>Розглянемо наступний компонент, який можна використовувати для моделювання тварини та її шуму.</p>
+            <pre style="border: 1px solid grey; padding: 10px"><code>
+        import {Component, Input, Output} from '@angular/core';
+    
+        @Component({
+        selector: 'animal-noise',
+        template: `
+            &lt;span>{{animal}}&lt;/span>
+            &lt;button (click)="makeNoise()">Make noise&lt;/button>
+        `
+        })
+        export class AnimalNoise {
+            @Input('animal') animal: string;
+            @Input('noise') noise: string;
+    
+            makeNoise() {
+                alert(`${this.noise}`);
+            }
+        }
+            </code></pre>
+            <p>Виберіть правильні твердження про компонент AnimalNoise.</p>
+            <p>(Виберіть усі прийнятні відповіді.)</p>
+            <ol>
+                <li>Component, Input і Output всі необхідні імпорти цього компонента.</li>
+                <li>При включенні компонента AnimalNoise у шаблон мають бути вказані вхідні дані як тварин, так і шуму.</li>
+                <li>Параметр 'animal' у оголошенні @Input ('animal') не змінює інтерфейс компонента.</li>
+                <li>При включенні до шаблону компонентів компонент AnimalNoise створює діапазон, що містить інтерполіроване
+                    ім'я тварин і кнопку, прив'язану до makeNoise().</li>
+                <li>Компонент AnimalNoise може бути включений в інший шаблон за допомогою тега &lt;AnimalNoise>.</li>
+            </ol>
+        </li>
+        <li>
+            <p>Розглянемо наступний модуль програми:</p>
+            <pre style="border: 1px solid grey; padding: 10px"><code>
+        import { NgModule }             from '@angular/core';
+        import { RouterModule, Routes } from '@angular/router';
+        import { HomeComponent }        from './home.component';
+        import { ItemDetailComponent }  from './item-detail.component';
+        const routes: Routes = [
+            { path: '', redirectTo: '/home', pathMatch: 'full' },
+            { path: 'home',  component: HomeComponent },
+            { path: 'detail/:id', component: ItemDetailComponent, outlet: 'route1' }
+        ];
+        @NgModule({
+            imports: [ RouterModule.forRoot(routes) ],
+            exports: [ RouterModule ]
+        })
+        export class AppRoutingModule {}
+            </code></pre>
+            <p>Які з таких тверджень щодо поведінки маршрутизаторів є правильними?</p>
+            <p>(Виберіть усі прийнятні відповіді.)</p>
+            <ol>
+                <li>Доступ до домашнього компонента можливий лише через перенаправлення кореневої URL-адреси.</li>
+                <li>Параметр id не є обов'язковим, коли виконується виклик / detail / URL.</li>
+                <li>Необов'язкові параметри можуть бути передані до будь-якого компонента через параметри запиту
+                    ActivatedRoute.</li>
+                <li>/detail/100 використовуватиме &lt;router-outlet name='route1'> для визначення позиції виду.</li>
+                <li>Route, який перенаправляє на HomeComponent, активується на тих самих маршрутах, якщо властивість
+                    pathMatch: 'full' була видалена.</li>
+            </ol>
+        </li>
+        <li>
+            <p>Розглянемо наступні два базові класи, Positionable і Rotatable, і похідний клас MovingObject:</p>
+            <pre style="border: 1px solid grey; padding: 10px"><code>
+        class Positionable {
+            locationX: number;
+            locationY: number;
+        }
+        
+        class Rotatable {
+            orientation: number;
+            rotate(orientation: number) {
+                this.orientation += orientation;
+            }
+            align(rotatable: Rotatable) {
+                this.orientation = rotatable.orientation;
+            }
+        }
+        
+        class MovingObject implements Positionable, Rotatable {
+            locationX: number = 0;
+            locationY: number = 0;
+            orientation: number = 0;
+            rotate: (orientation: number) => void;
+        }
+        
+        applyMixins(MovingObject, [Positionable, Rotatable]);
+        function applyMixins(derivedCtor: any, baseCtors: any[]) {
+            baseCtors.forEach(baseCtor => {
+                Object.getOwnPropertyNames(baseCtor.prototype).forEach(name => {
+                    derivedCtor.prototype[name] = baseCtor.prototype[name];
+                });
+            });
+        }
+        
+        let mover = new MovingObject(); 
+        mover.rotate(30);
+            </code></pre>
+            <p>Виберіть правильні твердження.</p>
+            <p>(Виберіть усі прийнятні відповіді.)</p>
+            <ol>
+                <li>Функція applyMixins застосовує реалізації Positionable і Rotatable до MovingObject.</li>
+                <li>Компілятор TypeScript підкреслить, що властивість "align" відсутня для типу MovingObject.</li>
+                <li>Оскільки MovingObject реалізує Rotatable, виклик mover.rotate(30) нічого не зробить.</li>
+                <li>Клас Positionable можна змінити на інтерфейс без помилок компілятора.</li>
+                <li>Властивості MovingObject необхідні як резервні для задоволення компілятора TypeScript.</li>
+            </ol>
+        </li>
+        <li>
+            <p>Розглянемо такі компоненти:</p>
+            <pre style="border: 1px solid grey; padding: 10px"><code>
+        export class Address {
+            street: String;
+            city: String;
+            zipCode: String;
+        }
+            
+        @Component({
+            selector: 'app-address',
+            templateUrl: './address.component.html',
+            styleUrls: ['./address.component.css']
+        })
+        export class AddressComponent implements OnInit {
+            
+            @Input() address: Address;
+            constructor() { }
+            
+            ngOnInit() {
+                
+            }
+        }
+            
+        @Component({
+            selector: 'app-address-list',
+            templateUrl: './address-list.component.html',
+            styleUrls: ['./address-list.component.css']
+        })
+        export class AddressListComponent implements OnInit {
+            
+            @Input() addresses: Address[];
+            constructor() { }
+            
+            ngOnInit() {
+    
+            }
+        }
+            </code></pre>
+            <p>Нижче наведено файл address-list.component.html. Заповніть пробіли, щоб шаблон відображав один елемент li на
+                адресу, і коректно пов'язував кожну адресу з полем AddressComponent.</p>
+            <pre style="border: 1px solid grey; padding: 10px"><code>
+        &lt;ul>
+            &lt;li <input type="text"/>="let address of <input type="text"/>">
+                &lt;app-address <input type="text"/>="address">&lt;/app-address>
+            &lt;/li>
+        &lt;/ul>
+            </code></pre>
+        </li>
+    </ol>
+    
+    <h1>Node JS</h1>
+    <ol>
+        <li>Що таке файл package.json?</li>
+        </br>
+        <li>Які є типи запитів HTTP?</li>
+        </br>
+        <li>Поясніть різницю між локальним і глобальним встановленням пакетів npm</li>
+        </br>
+        <li>Поясніть порядок виконання прослуховувачів подій у Node.js. Що буде результатом цього коду і чому?
+            </br>
+            Розглянемо цей код:
+            <pre style="border: 1px solid grey; padding: 10px"><code>
+            import { EventEmitter } from 'events';
+            const eventEmitter = new EventEmitter();
+    
+            eventEmitter.on('myEvent', (data) => {
+                console.log(data, '- FIRST');
+            });
+    
+            console.log('Statement A');
+    
+            eventEmitter.on("myEvent", data => {
+                console.log(data, '- SECOND');
+            });
+    
+            eventEmitter.emit('myEvent', 'Emitted Statement');
+    
+            console.log("Statement B");
+        </code></pre>
+        </li>
+        </br>
+        <li>Поясніть, що не так із використанням async/await у циклі forEach. Чи працює він належним чином? Ви можете це
+            виправити?
+            </br>Розглянемо цей код:
+            <pre style="border: 1px solid grey; padding: 10px"><code>
+            import fs from 'fs-promise'
+    
+            async function printFiles () {
+            const files = await getFilePaths() // Assume this works fine
+    
+            files.forEach(async (file) => {
+                const contents = await fs.readFile(file, 'utf8')
+                console.log(contents)
+            })
+            }
+    
+            printFiles()
+        </code></pre>
+        </li>
+        </br>
+        <li>Що саме робить module.exports у Node.js і яким би був простий приклад?</li>
+    </ol>
+    
+    <h1>Wordpress (Не обов'язково)</h1>
+    <ol>
+        <li>
+            <p>Тема WordPress містить, крім іншого, усі файли, наведені нижче. Які з цих файлів використовуватимуться для
+                відображення домашньої сторінки після активації цієї теми?</p>
+            <p>(Виберіть усі прийнятні відповіді.)</p>
+            <ol>
+                <li>page-front.php</li>
+                <li>front-page.php</li>
+                <li>home.php</li>
+                <li class="correct-answer">index.php</li>
+            </ol>
+        </li>
+        <li>
+            <p>Виберіть всі дії, які виконує наступний рядок коду під час використання у файлі index.php теми WordPress.</p>
+            <pre style="border: 1px solid grey; padding: 10px"><code>
+        &lt;?php get_header("home"); ?>
+            </code></pre>
+            <p>(Виберіть усі прийнятні відповіді.)</p>
+            <ol>
+                <li>Він завантажує файл із ім'ям home.php.</li>
+                <li>Він переходить на домашню сторінку вашої теми.</li>
+                <li>Він завантажує файл із ім'ям header-home.php.</li>
+                <li>Якщо запитаний файл не знайдено, get_header намагатиметься знайти header.php.</li>
+            </ol>
+        </li>
+    </ol>
+
+    <script src="/js/index.js">
+
+    </script>
+</body>
+</html>
