@@ -20,10 +20,10 @@ let sortedByDescDateArr = [...array].sort((firstDate, secondDate) => {
     return b - a; 
 });
 
-refs.container.insertAdjacentHTML("beforeend", `<code style="background:green; color:white">
+refs.container.insertAdjacentHTML("beforeend", `<code class="correct-answer-several">
       let newArrSortedByAsc = ${JSON.stringify(sortedByAscDateArr)}
 </code>`);
-refs.container.insertAdjacentHTML("beforeend", `<code style="background:green; color:white">
+refs.container.insertAdjacentHTML("beforeend", `<code class="correct-answer-several">
       let newArrSortedByDesc = ${JSON.stringify(sortedByDescDateArr)}
 </code>`);
 

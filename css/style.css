@@ -8,6 +8,10 @@ body{
 .correct-answer{
     color: rgb(75, 178, 75);
 }
+.correct-answer-several{
+    background-color: green;
+    color: #fff;
+}
 .containers{
     display: flex;
     flex-direction: column;

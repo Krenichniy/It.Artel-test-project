@@ -84,9 +84,22 @@
     
     <h1>Angular</h1>
     <ol>
-        <li>Яка різниця між *ngIf і [hidden]?</li>
+        <li>Яка різниця між *ngIf і [hidden]?
+                <div>
+                    <span class="correct-answer">Відповідь:</span>
+                    <p>*ngIf- це структурна директива яка видаляє елемент з ДОМ в залежності чи виконується умова, 
+                        а [hidden] приховує елемент не видаляючи його з ДОМ</p>
+                </div>
+        </li>
         </br>
-        <li>Що таке Observable?</li>
+        <li>Що таке Observable?
+                <div>
+                    <span class="correct-answer">Відповідь:</span>
+                    <p>Observable - це один з ключових класів у бібліотеці RxJS, яка використовується  для роботи з асинхронними
+                    даними та подіями.
+                    </p>
+                </div>
+        </li>
         </br>
         <li>
             <p>Розглянемо наступний компонент:</p>
@@ -105,9 +118,9 @@
             <p>Виберіть правильні твердження про його використання (в іншому шаблоні компонента або модулі).</p>
             <p>(Виберіть усі прийнятні відповіді.)</p>
             <ol>
-                <li>&lt;welcome name="TestDome">&lt;/welcome> відображатиме: "Welcome to TestDome!".</li>
-                <li>&lt;welcome>&lt;/welcome> нічого не відображатиме.</li>
-                <li>@NgModule({ declarations: [ WelcomeComponent ] }) export class WelcomeModule {} повідомляє, що компонент
+                <li class="correct-answer-several" style="margin-bottom: 10px;">&lt;welcome name="TestDome">&lt;/welcome> відображатиме: "Welcome to TestDome!".</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">&lt;welcome>&lt;/welcome> нічого не відображатиме.</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">@NgModule({ declarations: [ WelcomeComponent ] }) export class WelcomeModule {} повідомляє, що компонент
                     привітання належить модулю привітання.</li>
                 <li>&lt;hello name="{{ name }}">&lt;/hello> відображатиме: "Welcome to name!".</li>
             </ol>
@@ -136,12 +149,12 @@
             <p>Виберіть правильні твердження про компонент AnimalNoise.</p>
             <p>(Виберіть усі прийнятні відповіді.)</p>
             <ol>
-                <li>Component, Input і Output всі необхідні імпорти цього компонента.</li>
-                <li>При включенні компонента AnimalNoise у шаблон мають бути вказані вхідні дані як тварин, так і шуму.</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">Component, Input і Output всі необхідні імпорти цього компонента.</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">При включенні компонента AnimalNoise у шаблон мають бути вказані вхідні дані як тварин, так і шуму.</li>
                 <li>Параметр 'animal' у оголошенні @Input ('animal') не змінює інтерфейс компонента.</li>
-                <li>При включенні до шаблону компонентів компонент AnimalNoise створює діапазон, що містить інтерполіроване
+                <li class="correct-answer-several" style="margin-bottom: 10px;">При включенні до шаблону компонентів компонент AnimalNoise створює діапазон, що містить інтерполіроване
                     ім'я тварин і кнопку, прив'язану до makeNoise().</li>
-                <li>Компонент AnimalNoise може бути включений в інший шаблон за допомогою тега &lt;AnimalNoise>.</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">Компонент AnimalNoise може бути включений в інший шаблон за допомогою тега &lt;AnimalNoise>.</li>
             </ol>
         </li>
         <li>
@@ -165,12 +178,12 @@
             <p>Які з таких тверджень щодо поведінки маршрутизаторів є правильними?</p>
             <p>(Виберіть усі прийнятні відповіді.)</p>
             <ol>
-                <li>Доступ до домашнього компонента можливий лише через перенаправлення кореневої URL-адреси.</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">Доступ до домашнього компонента можливий лише через перенаправлення кореневої URL-адреси.</li>
                 <li>Параметр id не є обов'язковим, коли виконується виклик / detail / URL.</li>
-                <li>Необов'язкові параметри можуть бути передані до будь-якого компонента через параметри запиту
+                <li class="correct-answer-several" style="margin-bottom: 10px;">Необов'язкові параметри можуть бути передані до будь-якого компонента через параметри запиту
                     ActivatedRoute.</li>
                 <li>/detail/100 використовуватиме &lt;router-outlet name='route1'> для визначення позиції виду.</li>
-                <li>Route, який перенаправляє на HomeComponent, активується на тих самих маршрутах, якщо властивість
+                <li class="correct-answer-several" style="margin-bottom: 10px;">Route, який перенаправляє на HomeComponent, активується на тих самих маршрутах, якщо властивість
                     pathMatch: 'full' була видалена.</li>
             </ol>
         </li>
@@ -214,7 +227,7 @@
             <p>Виберіть правильні твердження.</p>
             <p>(Виберіть усі прийнятні відповіді.)</p>
             <ol>
-                <li>Функція applyMixins застосовує реалізації Positionable і Rotatable до MovingObject.</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">Функція applyMixins застосовує реалізації Positionable і Rotatable до MovingObject.</li>
                 <li>Компілятор TypeScript підкреслить, що властивість "align" відсутня для типу MovingObject.</li>
                 <li>Оскільки MovingObject реалізує Rotatable, виклик mover.rotate(30) нічого не зробить.</li>
                 <li>Клас Positionable можна змінити на інтерфейс без помилок компілятора.</li>
@@ -274,11 +287,41 @@
     
     <h1>Node JS</h1>
     <ol>
-        <li>Що таке файл package.json?</li>
+        <li>Що таке файл package.json?
+            <div>
+                <span class="correct-answer">Відповідь:</span>
+                <p>є стандартним файлом конфігурації, в цьому файлі зберігається інформація про проект, така як його ім'я, версія, 
+                    залежності, скрипти, які можна виконувати
+                та інші метадані.
+                </p>
+            </div>
+        </li>
         </br>
-        <li>Які є типи запитів HTTP?</li>
+        <li>Які є типи запитів HTTP?
+            <div>
+                <span class="correct-answer">Відповідь:</span>
+                <p>GET: запит на отримання ресурсу, наприклад, сторінки веб-сайту, з сервера.
+                <br>
+                POST: використовується для передачі даних на сервер для обробки.
+                <br>
+                PUT: використовується для оновлення існуючого ресурсу на сервері.
+                <br>
+                DELETE: використовується для видалення ресурсу на сервері.
+                <br>
+                PATCH: використовується для часткового оновлення ресурсу на сервері.
+                </p>
+            </div>
+        </li>
         </br>
-        <li>Поясніть різницю між локальним і глобальним встановленням пакетів npm</li>
+        <li>Поясніть різницю між локальним і глобальним встановленням пакетів npm 
+            <div>
+                <span class="correct-answer">Відповідь:</span>
+                <p>
+                Основна різниця між локальним та глобальним встановленням пакетів полягає в тому, що локальні пакети доступні лише в
+                межах конкретного проекту, тоді як глобальні пакети доступні для використання у всіх проектах на комп'ютері.
+                </p>
+            </div>
+        </li>
         </br>
         <li>Поясніть порядок виконання прослуховувачів подій у Node.js. Що буде результатом цього коду і чому?
             </br>
@@ -301,6 +344,24 @@
     
             console.log("Statement B");
         </code></pre>
+        <div>
+            <span class="correct-answer">Відповідь:</span>
+            <p>
+            У Node.js прослуховувачі подій виконуються в порядку їх додавання до емітера подій. У даному коді прослуховувач, доданий
+            першим, буде виконаний першим, а прослуховувач, доданий другим, буде виконаний другим. Після цього буде виконано
+            наступну інструкцію після emit.
+            <br>
+            Вивід буде наступним:
+            <br>
+            Statement A
+            <br>
+            Emitted Statement - FIRST
+            <br>
+            Emitted Statement - SECOND
+            <br>
+            Statement B
+            </p>
+        </div>
         </li>
         </br>
         <li>Поясніть, що не так із використанням async/await у циклі forEach. Чи працює він належним чином? Ви можете це
@@ -320,9 +381,43 @@
     
             printFiles()
         </code></pre>
+        <div>
+            <span class="correct-answer">Відповідь:</span>
+            <p>
+                Проблема у використанні конструкції forEach в асинхронних запитах. Так як async/await повертає promiss, який даний цикл
+                не оброблюэ правильно, він не чекає виконаня і переходить до наступного елементу в циклі.
+                Виправити можна за допомогою циклу for of який працює правильно з async/await
+                <code><br>
+                    for (const file of files) {
+                        <br>
+                    const contents = await fs.readFile(file, 'utf8')
+                    <br>
+                    console.log(contents)
+                    }
+                </code>
+            </p>
+        </div>
         </li>
         </br>
-        <li>Що саме робить module.exports у Node.js і яким би був простий приклад?</li>
+        <li>Що саме робить module.exports у Node.js і яким би був простий приклад?
+            <div>
+                <p>
+                    module.exports є об'єктом, який використовується для виведення функцій, об'єктів або даних із модулю, які
+                    можна використовувати в інших модулях, для
+                    експортування коду із модулю до іншого модулю, необхідно експортувати його за допомогою module.exports.<br>
+                    <code>
+                        // myModule.js<br>
+                        function greet(name) {<br>
+                        console.log(`Hello, ${name}!`);<br>
+                        }<br>
+                        module.exports = { greet };<br>
+                        // index.js<br>
+                        const myModule = require('./myModule');<br>
+                        myModule.greet('John'); // logs 'Hello, John!'<br>
+                    </code>
+                </p>
+            </div>
+        </li>
     </ol>
     
     <h1>Wordpress (Не обов'язково)</h1>
@@ -333,9 +428,9 @@
             <p>(Виберіть усі прийнятні відповіді.)</p>
             <ol>
                 <li>page-front.php</li>
-                <li>front-page.php</li>
-                <li>home.php</li>
-                <li class="correct-answer">index.php</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">front-page.php</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">home.php</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">index.php</li>
             </ol>
         </li>
         <li>
@@ -346,7 +441,7 @@
             <p>(Виберіть усі прийнятні відповіді.)</p>
             <ol>
                 <li>Він завантажує файл із ім'ям home.php.</li>
-                <li>Він переходить на домашню сторінку вашої теми.</li>
+                <li class="correct-answer-several" style="margin-bottom: 10px;">Він переходить на домашню сторінку вашої теми.</li>
                 <li>Він завантажує файл із ім'ям header-home.php.</li>
                 <li>Якщо запитаний файл не знайдено, get_header намагатиметься знайти header.php.</li>
             </ol>
